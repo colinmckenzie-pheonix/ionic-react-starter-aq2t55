@@ -26,10 +26,24 @@ import './theme/variables.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import './globalStyle.css';
 
-import Home from './pages/Home';
-import Example1 from './pages/example/Example1';
-import Example2 from './pages/example/Example2';
-import Launcher from './pages/Launcher';
+import Start1 from './pages/launch/Start1';
+import Start2 from './pages/launch/Start2';
+import Start3 from './pages/launch/Start3';
+import Start4 from './pages/launch/Start4';
+import Start5 from './pages/launch/Start5';
+import StartCheck from './pages/StartCheck';
+import CaptureProviderName from './pages/CaptureProviderName';
+import CapturePlanNumber from './pages/CapturePlanNumber';
+import CaptureEstimatedValue from './pages/CaptureEstimatedValue';
+import CaptureEmployerPayingIn from './pages/CaptureEmployerPayingIn';
+import PrototypeComplete from './pages/PrototypeComplete';
+import TransferDetails from './pages/TransferDetails';
+import SelectPensionToTransferInto from './pages/SelectPensionToTransferInto';
+import ConfirmPensionToTransferInto from './pages/ConfirmPensionToTransferInto';
+import FinalChecks from './pages/FinalChecks';
+import Confirmation from './pages/Confirmation';
+import BeforeWeBegin from './pages/BeforeWeBegin';
+import Launcher from './pages/launch/Launcher';
 
 setupIonicReact();
 
@@ -39,19 +53,61 @@ const App: React.FC = () => (
       <IonReactRouter>
         <IonRouterOutlet>
           <Route exact path="/">
-            <Redirect to="/home" />
-          </Route>
-          <Route exact path="/home">
-            <Home />
-          </Route>
-          <Route exact path="/example1">
-            <Example1 />
-          </Route>
-          <Route exact path="/example2">
-            <Example2 />
+            <Redirect to="/launcher" />
           </Route>
           <Route exact path="/launcher">
             <Launcher />
+          </Route>
+          <Route exact path="/start1">
+            <Start1 />
+          </Route>
+          <Route exact path="/start2">
+            <Start2 />
+          </Route>
+          <Route exact path="/start3">
+            <Start3 />
+          </Route>
+          <Route exact path="/start4">
+            <Start4 />
+          </Route>
+          <Route exact path="/start5">
+            <Start5 />
+          </Route>
+          <Route exact path="/startcheck">
+            <StartCheck />
+          </Route>
+          <Route exact path="/beforewebegin">
+            <BeforeWeBegin />
+          </Route>
+          <Route exact path="/captureprovidername">
+            <CaptureProviderName />
+          </Route>
+          <Route exact path="/captureplannumber">
+            <CapturePlanNumber />
+          </Route>
+          <Route exact path="/capturevalue">
+            <CaptureEstimatedValue />
+          </Route>
+          <Route exact path="/capturepayingin">
+            <CaptureEmployerPayingIn />
+          </Route>
+          <Route exact path="/transferdetails">
+            <TransferDetails />
+          </Route>
+          <Route exact path="/selectpensiontotransferinto">
+            <SelectPensionToTransferInto />
+          </Route>
+          <Route exact path="/confirmpensiontotransferinto">
+            <ConfirmPensionToTransferInto />
+          </Route>
+          <Route exact path="/finalchecks">
+            <FinalChecks />
+          </Route>
+          <Route exact path="/confirmation">
+            <Confirmation />
+          </Route>
+          <Route exact path="/prototypecomplete">
+            <PrototypeComplete />
           </Route>
         </IonRouterOutlet>
       </IonReactRouter>
