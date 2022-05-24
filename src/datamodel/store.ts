@@ -1,14 +1,13 @@
 import { AnyAction, configureStore } from '@reduxjs/toolkit';
-import exampleReducer from './example/exampleSlice';
-import launcherReducer from './launcher/launcherSlice';
+import appDataReducer from './appdataslice';
 import { logger } from './middleware';
 
 const store = configureStore({
   reducer: {
-    example: exampleReducer,
-    launcher: launcherReducer,
+    appData: appDataReducer,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+  // uncomment teh line below in dev if wanting to see redux state changes being logged
+  // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
   devTools: true,
 });
 

@@ -1,0 +1,34 @@
+.ion-content-blue-bg {
+  --ion-background-color: linear-gradient(120deg, var(--primary-blue), var(--primary-blue) 20%, var(--secondary-blue));
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.28);
+}
+
+.segment-border-active {
+  border-bottom-color: var(--primary-yellow) !important;
+}
+
+.segment-border-inactive {
+  border-bottom-color: var(--primary-blue) !important;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.inset {
+  background-color: rgb(20, 124, 179, 0.2);
+}
+
+.right-white-line {
+  border-top: 1px solid white;
+  width: 20px;
+  top: 12px;
+  left: 5px;
+}
+.left-white-line {
+  border-top: 1px solid white;
+  width: 20px;
+  top: 12px;
+  right: 5px;
+}

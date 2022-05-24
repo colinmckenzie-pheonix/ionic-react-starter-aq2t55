@@ -1,0 +1,221 @@
+:root {
+  --mid-grey: #8e8e93;
+  --lightest-grey: #8f8f8f;
+  --disabled-grey: #ccc;
+  --primary-blue: #0a2f73;
+  --secondary-blue: #147cb3;
+  --detail-icon-color: #147cb3 !important;
+  --alert-red: #d00f00;
+  --positive-green: #008616;
+  --light-grey: #f2f2f2;
+  --item-border-color: #c8c7cc;
+  --primary-yellow: #ffbb00;
+  --card-background-color-disabled: #e1e1e1;
+
+  /** app select **/
+  --ion-color-appselect: #ffd534;
+  --ion-color-appselect-rgb: 255, 255, 255;
+  --ion-color-appselect-contrast: #ffffff;
+  --ion-color-appselect-contrast-rgb: 255, 255, 255;
+  --ion-color-appselect-shade: #e0e0e0;
+  --ion-color-appselect-tint: #ffffff;
+
+  /** app primary **/
+  --ion-color-appprimary: #147cb3;
+  --ion-color-appprimary-rgb: 20, 124, 179;
+  --ion-color-appprimary-contrast: #ffffff;
+  --ion-color-appprimary-contrast-rgb: 255, 255, 255;
+  --ion-color-appprimary-shade: #126d9e;
+  --ion-color-appprimary-tint: #2c89bb;
+
+  /** app secondary **/
+  --ion-color-appsecondary: #ffffff;
+  --ion-color-appsecondary-rgb: 255, 255, 255;
+  --ion-color-appsecondary-contrast: #147cb3;
+  --ion-color-appsecondary-contrast-rgb: 20, 124, 179;
+  --ion-color-appsecondary-shade: #e0e0e0;
+  --ion-color-appsecondary-tint: #ffffff;
+
+  /** appdarkblue **/
+  --ion-color-appdarkblue: #0a2f73;
+  --ion-color-appdarkblue-rgb: 10, 47, 115;
+  --ion-color-appdarkblue-contrast: #ffffff;
+  --ion-color-appdarkblue-contrast-rgb: 255, 255, 255;
+  --ion-color-appdarkblue-shade: #092965;
+  --ion-color-appdarkblue-tint: #234481;
+}
+
+.ion-color-appdarkblue {
+  --ion-color-base: var(--ion-color-appdarkblue);
+  --ion-color-base-rgb: var(--ion-color-appdarkblue-rgb);
+  --ion-color-contrast: var(--ion-color-appdarkblue-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-appdarkblue-contrast-rgb);
+  --ion-color-shade: var(--ion-color-appdarkblue-shade);
+  --ion-color-tint: var(--ion-color-appdarkblue-tint);
+}
+.ion-color-appprimary {
+  --ion-color-base: var(--ion-color-appprimary);
+  --ion-color-base-rgb: var(--ion-color-appprimary-rgb);
+  --ion-color-contrast: var(--ion-color-appprimary-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-appprimary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-appprimary-shade);
+  --ion-color-tint: var(--ion-color-appprimary-tint);
+}
+.ion-color-appsecondary {
+  --ion-color-base: var(--ion-color-appsecondary);
+  --ion-color-base-rgb: var(--ion-color-appsecondary-rgb);
+  --ion-color-contrast: var(--ion-color-appsecondary-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-appsecondary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-appsecondary-shade);
+  --ion-color-tint: var(--ion-color-appsecondary-tint);
+}
+
+ion-input {
+  background-color: white !important;
+  line-height: 20px;
+  font-size: 17px;
+  border: 1px solid #4b4b4b;
+  border-radius: 6px;
+}
+ion-input:focus-within {
+  border: 2px solid #147cb3;
+}
+ion-input[type='number']:before {
+  content: '£';
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.primary-blue {
+  color: var(--ion-color-appdarkblue) !important;
+}
+.primary-blue-bg {
+  background-color: var(--ion-color-appdarkblue) !important;
+}
+.secondary-blue {
+  color: #147cb3;
+}
+.grey-bg {
+  background-color: var(--ion-color-light) !important;
+}
+.grey-bg-custom-prop {
+  --background: var(--ion-color-light);
+}
+.white-color {
+  color: white !important;
+}
+.white-bg {
+  background-color: white !important;
+}
+.black-color {
+  color: #000000 !important;
+}
+.grey-color {
+  color: #4b4b4b !important;
+}
+.mid-grey-color {
+  color: var(--mid-grey) !important;
+}
+.positive-green-color {
+  color: var(--positive-green) !important;
+}
+.minw-300 {
+  min-width: 300px;
+}
+.maxw-300 {
+  max-width: 300px;
+}
+.maxw-400 {
+  max-width: 400px;
+}
+.tiny-font {
+  font-size: 12px;
+  line-height: 24px;
+}
+.small-font {
+  font-size: 13px;
+  line-height: 20px;
+}
+.no-ripple {
+  --ripple-color: transparent;
+}
+.card-as-button {
+  height: 36px;
+  border: 0.125rem solid #147cb3;
+  border-radius: 3px;
+}
+.large-icon {
+  font-size: 72px;
+}
+.toolbar-icon {
+  font-size: 24px;
+}
+.adviser-content {
+  background-color: #e8f5fc;
+  border: 1px solid #147cb3 !important;
+  border-left: 5px solid #147cb3 !important;
+}
+.check-benefits-content {
+  color: #ffbb00;
+  background-color: #fff5cc;
+  border: 1px solid #ffbb00 !important;
+  border-left: 5px solid #ffbb00 !important;
+}
+.warning-icon {
+  color: #ffbb00;
+}
+.back-icon {
+  font-size: 37px;
+  font-weight: 400;
+}
+.receiving-regular-payments-border {
+  border-left: 5px solid var(--positive-green) !important;
+}
+
+.vertical-line {
+  margin-left: 4px;
+  border-left: 2px solid var(--lightest-grey);
+  height: 100%;
+  position: relative;
+}
+.vertical-line:after {
+  position: absolute;
+  content: '\25CF';
+  font-size: 20px;
+  color: var(--lightest-grey);
+  left: -7px;
+}
+.vertical-line-bottom {
+  height: 20px;
+  margin-bottom: 1rem !important;
+}
+.vertical-line-middle {
+  height: 30px;
+}
+
+@media (max-width: 420px) {
+  .vertical-line-bottom {
+    height: 20px;
+  }
+  .vertical-line-middle {
+    height: 45px;
+  }
+}
+
+.narrow-icon-button {
+  --padding-start: 2px;
+  --padding-end: 2px;
+}
+.top-corners {
+  border-radius: 15px 20px 0 0;
+  background: white;
+  padding: 0px;
+  height: 15px;
+}
+
+.simulate-mobile {
+  max-width: 500px;
+  border-width: 5px !important;
+  border-color: #4b4b4b !important;
+  border-style: solid;
+}
